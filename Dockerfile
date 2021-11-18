@@ -9,4 +9,4 @@ RUN a2enmod \
     ssl \
     shib
 
-CMD service shibd start && service apache2 start && sleep infinity
+CMD service shibd start; service apache2 start; sleep infinity
