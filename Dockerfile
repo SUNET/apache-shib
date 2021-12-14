@@ -7,7 +7,8 @@ RUN a2enmod \
     proxy \
     proxy_http \
     ssl \
-    shib
+    shib \
+    headers
 
 COPY start.sh .
 
