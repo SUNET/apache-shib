@@ -1,4 +1,4 @@
-FROM ubuntu:focal
+FROM debian:bookworm
 
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
     apache2 \
@@ -13,4 +13,4 @@ RUN a2enmod \
 
 COPY start.sh .
 
-CMD ./start.sh
+CMD ["./start.sh"]
